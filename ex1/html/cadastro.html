@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contate-nos | Patas de Gatos</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <script src="../js/formulario.js" defer></script>
+</head>
+
+<body class="body">
+    <div class="header">
+        <a href="index.html" class="header__link">
+            <img src="../images/cat_white.png" class="header__item header__cat">
+        </a>
+        <a href="projetos.html" class="header__item header__link">Nossos Projetos</a>
+        <a href="cadastro.html" class="header__item header__link">Contate-nos</a>
+    </div>
+
+    <main class="cadastro">
+        <div class="cadastro__intro">
+            <h1>Entre em contato</h1>
+            <p>Envie uma mensagem para conhecer melhor o nosso trabalho ou saber como ajudar.</p>
+        </div>
+
+        <form class="cadastro__form" id="formCadastro" novalidate>
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+            <span class="erro" id="erroNome"></span>
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+            <span class="erro" id="erroEmail"></span>
+
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone" required>
+            <span class="erro" id="erroTelefone"></span>
+
+            <label for="assunto">Assunto</label>
+            <input type="text" id="assunto" name="assunto" placeholder="Sobre o que deseja falar?" required>
+            <span class="erro" id="erroAssunto"></span>
+
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="6" placeholder="Digite sua mensagem" required></textarea>
+            <span class="erro" id="erroMensagem"></span>
+
+            <button type="submit">Enviar mensagem</button>
+            <p class="cadastro__sucesso" id="mensagemSucesso"></p>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 Patas de Gatos</p>
+        <p>Solidariedade que transforma vidas</p>
+    </footer>
+</body>
+
+</html>

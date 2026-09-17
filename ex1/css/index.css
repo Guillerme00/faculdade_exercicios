@@ -1,0 +1,182 @@
+@import url("https://googleapis.com");
+
+.body {
+  background-color: #f7d1ba;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  justify-items: center;
+  font-family: "Century Gothic", AppleGothic, sans-serif;
+}
+
+.header {
+  background-color: #694c39;
+  width: 100%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  font-size: 14px;
+  padding: 8px;
+}
+
+.header__item {
+  cursor: pointer;
+  font-size: 20px;
+  transition: 0.3s;
+  font-family: "Century Gothic", AppleGothic, sans-serif;
+}
+
+.header__item:hover {
+  color: #6b6b6b;
+}
+
+.header__link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.header__cat {
+  width: 64px;
+}
+
+.body__div {
+  margin-top: 64px;
+  margin-bottom: 64px;
+  display: flex;
+  gap: 64px;
+}
+
+.body__div__text {
+  max-width: 600px;
+  font-size: 16px;
+}
+
+.body__text {
+  overflow-wrap: break-word;
+}
+
+.body__img {
+  height: 512px;
+  border-radius: 0.5em;
+  border: 2px solid #694c39;
+}
+
+.projetos {
+  width: min(100% - 64px, 1120px);
+  margin: 64px auto;
+  display: flex;
+  justify-content: center;
+  gap: 64px;
+}
+
+.projeto {
+  max-width: 480px;
+  text-align: center;
+}
+
+.projeto__img {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  border-radius: 0.5em;
+  border: 2px solid #694c39;
+}
+
+.projeto h2 {
+  color: #694c39;
+}
+
+.projeto p {
+  font-size: 16px;
+}
+
+.cadastro {
+  width: min(100% - 64px, 720px);
+  margin: 64px auto;
+}
+
+.cadastro__intro {
+  color: #694c39;
+  text-align: center;
+}
+
+.cadastro__intro h1 {
+  margin-bottom: 8px;
+}
+
+.cadastro__intro p {
+  margin-top: 0;
+  font-size: 16px;
+}
+
+.cadastro__form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 32px;
+}
+
+.cadastro__form label {
+  color: #694c39;
+  font-weight: bold;
+}
+
+.cadastro__form input,
+.cadastro__form textarea {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #694c39;
+  border-radius: 0.5em;
+  background-color: #fff8f3;
+  color: #694c39;
+  font: inherit;
+  margin-bottom: 12px;
+}
+
+.erro {
+  min-height: 18px;
+  margin-top: -8px;
+  color: #a52f2f;
+  font-size: 14px;
+}
+
+.cadastro__sucesso {
+  color: #315f36;
+  text-align: center;
+}
+
+.cadastro__form textarea {
+  resize: vertical;
+}
+
+.cadastro__form button {
+  align-self: center;
+  padding: 12px 24px;
+  border: 0;
+  border-radius: 0.5em;
+  background-color: #694c39;
+  color: white;
+  cursor: pointer;
+  font: inherit;
+  transition: 0.3s;
+}
+
+.cadastro__form button:hover {
+  background-color: #80604a;
+}
+
+.footer {
+  width: 100%;
+  padding: 24px 0;
+  background-color: #694c39;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+}
+
+.footer p {
+  margin: 6px 0;
+}
