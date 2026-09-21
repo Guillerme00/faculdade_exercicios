@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Encontre oportunidades e compartilhe vagas na LinkJobs.">
+    <title>LinkJobs | Oportunidades profissionais</title>
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container site-header__content">
+            <a class="brand" href="#inicio" aria-label="LinkJobs - início">
+                <span class="brand__mark">LJ</span>
+                <span class="brand__name">LinkJobs</span>
+            </a>
+            <nav class="main-nav" aria-label="Navegação principal">
+                <a class="main-nav__link main-nav__link--active" href="#inicio">Início</a>
+                <a class="main-nav__link" href="#vagas">Vagas</a>
+                <a class="main-nav__link" href="#sobre">Sobre nós</a>
+            </nav>
+            <a class="header-action" href="#vagas">Explorar vagas</a>
+        </div>
+    </header>
+
+    <main id="inicio">
+        <section class="hero">
+            <div class="container hero__content">
+                <div class="hero__copy">
+                    <p class="eyebrow">Conectando talentos e empresas</p>
+                    <h1>Encontre o próximo passo da sua carreira.</h1>
+                    <p class="hero__description">Vagas selecionadas para quem quer crescer, criar e fazer a diferença.</p>
+                    <a class="button button--primary" href="#vagas">Ver oportunidades</a>
+                </div>
+                <div class="hero__aside" aria-hidden="true">
+                    <span class="hero__number">+120</span>
+                    <span class="hero__label">oportunidades abertas</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="jobs-section" id="vagas">
+            <div class="container">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">Oportunidades em destaque</p>
+                        <h2>Vagas que podem combinar com você</h2>
+                    </div>
+                    <button class="button button--outline add-job-button" type="button" id="open-modal">+ Adicionar vaga</button>
+                </div>
+
+                <div class="jobs-grid" id="jobs-list">
+                    <article class="job-card">
+                        <div class="job-card__topline">
+                            <span class="job-card__category">Tecnologia</span>
+                            <span class="job-card__type">CLT</span>
+                        </div>
+                        <h3>Desenvolvedor(a) Front-end Jr.</h3>
+                        <p class="job-card__company">Nexa Digital</p>
+                        <p class="job-card__description">Buscamos uma pessoa curiosa para criar experiências digitais acessíveis e relevantes.</p>
+                        <div class="job-card__details">
+                            <span>São Paulo, SP</span>
+                            <span>Híbrido</span>
+                        </div>
+                        <button class="job-card__link" type="button">Ver detalhes <span aria-hidden="true">→</span></button>
+                    </article>
+
+                    <article class="job-card">
+                        <div class="job-card__topline">
+                            <span class="job-card__category">Marketing</span>
+                            <span class="job-card__type">PJ</span>
+                        </div>
+                        <h3>Analista de Conteúdo</h3>
+                        <p class="job-card__company">Casa Norte</p>
+                        <p class="job-card__description">Faça parte de um time criativo e transforme ideias em histórias que aproximam marcas e pessoas.</p>
+                        <div class="job-card__details">
+                            <span>Remoto</span>
+                            <span>Tempo integral</span>
+                        </div>
+                        <button class="job-card__link" type="button">Ver detalhes <span aria-hidden="true">→</span></button>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <div class="modal-overlay" id="post-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+            <div class="modal">
+                <div class="modal__header">
+                    <div>
+                        <p class="eyebrow">Compartilhe uma oportunidade</p>
+                        <h2 id="modal-title">Adicionar nova vaga</h2>
+                    </div>
+                    <button class="modal__close" type="button" id="close-modal" aria-label="Fechar formulário">×</button>
+                </div>
+                <form class="job-form" id="job-form">
+                    <label for="job-title">Título da vaga</label>
+                    <input id="job-title" name="job-title" type="text" placeholder="Ex.: Designer de Produto" required>
+
+                    <label for="company">Empresa</label>
+                    <input id="company" name="company" type="text" placeholder="Nome da empresa" required>
+
+                    <div class="form-row">
+                        <div>
+                            <label for="category">Área</label>
+                            <input id="category" name="category" type="text" placeholder="Ex.: Design" required>
+                        </div>
+                        <div>
+                            <label for="location">Localização</label>
+                            <input id="location" name="location" type="text" placeholder="Ex.: Remoto" required>
+                        </div>
+                    </div>
+
+                    <label for="description">Descrição</label>
+                    <textarea id="description" name="description" rows="4" placeholder="Conte um pouco sobre a oportunidade..." required></textarea>
+
+                    <button class="button button--primary" id="button-submit" type="submit">Publicar vaga</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer" id="sobre">
+        <div class="container site-footer__content">
+            <div>
+                <a class="brand brand--footer" href="#inicio">
+                    <span class="brand__mark">LJ</span>
+                    <span class="brand__name">LinkJobs</span>
+                </a>
+                <p>O elo entre pessoas talentosas e grandes oportunidades.</p>
+            </div>
+            <p class="site-footer__copyright">© 2024 LinkJobs. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+<script src="../js/index.js"></script>
+</html>
